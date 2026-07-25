@@ -9,7 +9,7 @@ module.exports = (_env, argv) => {
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: production ? 'assets/[name].[contenthash:8].js' : 'assets/[name].js',
-      publicPath: '/',
+      publicPath: './',
       clean: true,
     },
     devtool: production ? 'source-map' : 'eval-cheap-module-source-map',
